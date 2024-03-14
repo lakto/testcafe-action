@@ -1,5 +1,6 @@
-# DEPREDCATED
-The TestCafe team no longer maintains the `testcafe-action` repository. If you want to take over the project, we'll be happy to hand it over. To contact the team, create a new GitHub issue.
+# FORK from DevExpress/testcafe-action
+
+Since the TestCafe team no longer maintains the `testcafe-action` repository and the node-js version was outdated, I had to fork their repositoriy. Please use with care. The current state is experimental.
 
 ## Run TestCafe GitHub Action
 
@@ -9,7 +10,7 @@ This action installs [TestCafe](https://github.com/DevExpress/testcafe) from `np
 
 ```yaml
 - uses: actions/checkout@v1
-- uses: DevExpress/testcafe-action@latest
+- uses: lakto/testcafe-action@latest
   with:
     args: "chrome tests"
 ```
@@ -29,7 +30,7 @@ You can also use the [version](#version) option to specify the TestCafe version.
 TestCafe [command line arguments](https://devexpress.github.io/testcafe/documentation/using-testcafe/command-line-interface.html).
 
 ```yaml
-- uses: DevExpress/testcafe-action@latest
+- uses: lakto/testcafe-action@latest
   with:
     args: "chrome fixture.js -s takeOnFails=true -q -c 3"
 ```
@@ -41,7 +42,7 @@ TestCafe [command line arguments](https://devexpress.github.io/testcafe/document
 The TestCafe version to install.
 
 ```yaml
-- uses: DevExpress/testcafe-action@latest
+- uses: lakto/testcafe-action@latest
   with:
     version: "1.6.0"
     args: "chrome tests"
@@ -56,7 +57,7 @@ The TestCafe version to install.
 Whether to skip having this action install TestCafe. This is useful if you are managing TestCafe already in your package.json dependencies and want to use that version.
 
 ```yaml
-- uses: DevExpress/testcafe-action@latest
+- uses: lakto/testcafe-action@latest
   with:
     skip-install: true
     args: "chrome tests"
