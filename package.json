@@ -5,8 +5,6 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "standard",
-    "lint:fix": "standard --fix",
     "package": "ncc build index.js -o dist"
   },
   "repository": {
@@ -21,15 +19,6 @@
   },
   "homepage": "https://github.com/lakto/testcafe-action#readme",
   "dependencies": {
-    "@actions/core": "^1.10.1",
-    "@actions/github": "^6.0.0"
-  },
-  "devDependencies": {
-    "standard": "^14.3.4"
-  },
-  "standard": {
-    "ignore": [
-      "/dist/*.js"
-    ]
+    "@actions/core": "^1.10.1"
   }
 }
