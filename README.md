@@ -2,6 +2,8 @@
 
 Since the TestCafe team no longer maintains the `testcafe-action` repository and the node-js version was outdated, I had to fork their repositoriy. Please use with care. The current state is experimental.
 
+I forked the repository to update nodejs to version 20 to avoid the message in the actions about "deprecated node version".
+
 ## Run TestCafe GitHub Action
 
 This action installs [TestCafe](https://github.com/DevExpress/testcafe) from `npm` and runs tests.
